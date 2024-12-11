@@ -2,6 +2,7 @@ Ceci est le code de notre PSC.
 Pour l'instant il y a le code pour l'algorithme quantique :
 
 <h3>ce qui a été fait : </h3> 
+
 - définition de l'hamiltonien d'Anderson avec la possibilité de choisir le nombre d'impuretés
 
 - implémentation du HVA (annealing) mais qui reste à corriger
