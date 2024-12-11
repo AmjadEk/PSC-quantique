@@ -1,6 +1,10 @@
 import numpy as np
 
+
+
 def tridiag(diag,sousdiag,surdiag):
+    """Construit une matrice tridiagonale à partir des
+    listes des éléments des trois diagonales"""
     n = len(diag)
     A = np.zeros((n,n))
     A[0][0] = diag[0]
@@ -14,9 +18,12 @@ def tridiag(diag,sousdiag,surdiag):
     return A
 
 
- 
 
 def lanczos(v,H,M,eps):
+    """Calcule les valeurs propres approchées de la Matrice H avec l'algorithme de Lanczos.
+    v : vecteur initial (choisir un état de Fock ?)
+    M : nombre d'itérations
+    eps : seuil de précision"""
     a = []
     b = []
     b.append(np.linalg.norm(v))
